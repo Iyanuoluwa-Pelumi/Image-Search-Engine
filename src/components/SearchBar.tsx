@@ -21,11 +21,19 @@ export default function SearchBar({ onSearch }: Props) {
         placeholder="Search images..."
         className="flex-1 border px-3 py-2 rounded"
       />
-      <button className="hidden cursor-pointer sm:block bg-blue-500 text-white px-4 py-2 rounded">
+
+      <button
+        type='submit'
+        className="hidden cursor-pointer sm:block bg-blue-500 text-white px-4 py-2 rounded">
         Search
       </button>
 
-      <Search className="sm:hidden right-16 text-blue-500" size={30} />
+      <button
+        type="submit"
+        className="sm:hidden p-2 rounded-full hover:bg-blue-100 transition">
+        
+        <Search className="sm:hidden right-16 text-blue-500" size={30} />
+      </button>
     </form>
   );
 }
