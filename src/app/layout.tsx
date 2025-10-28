@@ -28,6 +28,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+
+        {/* Footer */}
+        <footer className="bg-gray-200 text-center py-4 bottom-0 w-full">
+          <p className="text-gray-600"> © Iyanuoluwa Pelumi. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
